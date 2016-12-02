@@ -10,7 +10,7 @@ function getPaymentPlan() {
 
     $.ajax({
         type: "GET",
-        url: "LoanCalculator/getPaymentPlan",
+        url: "index.php/LoanCalculator/getPaymentPlan",
         data: loanFormData,
         success: function(result){
             document.getElementById("paymentPlan").innerHTML = result;
