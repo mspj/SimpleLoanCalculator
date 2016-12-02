@@ -32,10 +32,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <label for="loanType">Loan Type:</label>
                     <select name="loanType" class="form-control" id="loanType"
                             style="max-width: 200px; display: inline">
-                        <option>Mortgage</option>
-                        <option>Auto Loan</option>
-                        <option>Appliance Loan</option>
-                        <option>Payday Loan</option>
+                        <?php
+                        foreach ($loans as $loan) :?>
+                            <option value="<?php echo $loan['id']; ?>"> <?php echo $loan['name']; ?></option>
+                        <?php endforeach; ?>
                     </select>
                 </div>
                 <input type="submit" class="btn btn-info"

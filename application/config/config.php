@@ -514,3 +514,26 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+$config['loans'] = [
+    'mortgage' => [
+        'name' => 'Mortgage',
+        'id' => 'mortgage',
+        'interestRate' => 3.5
+    ],
+    'auto' => [
+        'name' => 'Auto Loan',
+        'id' => 'auto',
+        'interestRate' => 3.0
+    ],
+    'appliance' => [
+        'name' => 'Appliance Loan',
+        'id' => 'appliance',
+        'interestRate' => 2.5
+    ],
+    'payday' => [
+        'name' => 'Payday Loan',
+        'id' => 'payday',
+        'interestRate' => 2.0
+    ]
+];
